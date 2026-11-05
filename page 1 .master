@@ -1,0 +1,64 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="page 1 .master.cs" Inherits="page_1_" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 80%;
+            background-color: #999966;
+        }
+        .auto-style2 {
+            width: 166px;
+            height: 244px;
+        }
+        .auto-style3 {
+            height: 244px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table class="auto-style1">
+            <tr>
+                <td colspan="2" style="text-align: center">&nbsp;&nbsp;&nbsp;&nbsp; University Platform&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style2">
+                    <asp:TreeView ID="TreeView1" runat="server">
+                        <Nodes>
+                            <asp:TreeNode Text="Home" Value="Home" NavigateUrl="~/Home.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Student" Value="Student" NavigateUrl="~/Student.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Staf" Value="Staf" NavigateUrl="~/Staf.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="Class Schadual" Value="Class Schadual" NavigateUrl="~/Class schadual.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="courses" Value="courses" NavigateUrl="~/courses.aspx"></asp:TreeNode>
+                            <asp:TreeNode Text="college" Value="college" NavigateUrl="~/college.aspx"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/StudentList.aspx" Text="Student Record" Value="Student Record"></asp:TreeNode>
+                            <asp:TreeNode NavigateUrl="~/Course list.aspx" Text="Course Record" Value="Course Record"></asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td class="auto-style3">
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                        <p>
+                            &nbsp;</p>
+    </asp:ContentPlaceHolder>
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">&copy: \Platform 2024</td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
